@@ -30,4 +30,30 @@ public class Matricula {
 private Aluno aluno;
 
 private LocalDateTime dataDaMatricula = LocalDateTime.now();
+
+public long getId() {
+	return id;
+}
+
+public void setId(long id) {
+	this.id = id;
+}
+
+public Aluno getAluno() {
+	return aluno;
+}
+
+public void setAluno(Aluno aluno) {
+	this.aluno = aluno;
+}
+
+public LocalDateTime getDataDaMatricula() {
+	return dataDaMatricula;
+}
+
+public void setDataDaMatricula(LocalDateTime dataDaMatricula) {
+	this.dataDaMatricula = dataDaMatricula;
+}
+
+
 }

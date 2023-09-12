@@ -23,6 +23,8 @@ import jakarta.validation.Valid;
 @RequestMapping("/alunos")
 public class AlunoController {
 	
+	
+	
 	@Autowired
 	private AlunoServiceImpl service;
 	
@@ -38,6 +40,7 @@ public class AlunoController {
 		return service.getAllAvaliacaoFisicaId(id);
 	}
 
+	@GetMapping
 	public List<Aluno> getAll (@RequestParam(value = "dataDeNascimento",
 													 required = false) String dataDeNascimento)
 	{

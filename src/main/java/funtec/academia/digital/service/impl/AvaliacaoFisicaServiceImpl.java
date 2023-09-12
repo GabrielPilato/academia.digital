@@ -50,7 +50,7 @@ public class AvaliacaoFisicaServiceImpl implements IAvaliacaoFisicaService{
 	@Override
 	public List<AvaliacaoFisica> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return avaliacaoFisicaRepository.findAll();
 	}
 
 	@Override

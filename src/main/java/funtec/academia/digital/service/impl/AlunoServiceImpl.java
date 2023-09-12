@@ -14,6 +14,7 @@ import funtec.academia.digital.repository.AlunoRepository;
 import funtec.academia.digital.service.IAlunoService;
 
 
+
 @Service
 public class AlunoServiceImpl implements IAlunoService{
 	
@@ -48,7 +49,7 @@ public class AlunoServiceImpl implements IAlunoService{
 	    if(dataDeNascimento == null) {
 	      return repository.findAll();
 	    } else {
-	      LocalDate localDate = LocalDate.parse(dataDeNascimento, DateTimeFormatter.ISO_LOCAL_DATE);
+	      LocalDate localDate = LocalDate.parse(dataDeNascimento, DateTimeFormatter.ofPattern("dd/MM/YYYY"));
 	      return repository.findByDataDeNascimento(localDate);
 	    }
 
